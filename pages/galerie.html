@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclusion du fichier CSS de Bootstrap depuis un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Inclusion de la bibliothèque Font Awesome de Bootstrap depuis un CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Importation du fichier CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Icône du site -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/imgs/LOGO/IconLogo.png">
+    <!-- Titre de la page -->
+    <title>Myriad Art 360 — Galerie d'art</title>
+</head>
+
+<body>
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <!-- Logo du site -->
+            <a class="navbar-brand" href="../index.html"><img src="../assets/imgs/LOGO/MyriadArtLogo.svg"
+                    alt="Logo du site web"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenu de la barre de navigation -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <!-- Menu déroulant -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="galerie.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Œuvres d'art
+                        </a>
+                        <!-- Sous-menu déroulant -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="menu.html">À Découvrir</a></li>
+                            <li><a class="dropdown-item" href="galerie.html">Galerie d'Art</a></li>
+                            <li>
+                                <!-- Séparateur de menu -->
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="exposition.html">Exposition du mois</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-presentation">
+        <div class="container-text-presentation">
+            <p class="caption-presentation">Galerie D'Art
+            </p>
+            <p class="caption-presentation-p">Plongez dans un monde d'expression artistique infinie, où chaque coup de
+                pinceau, chaque trait et chaque œuvre captivent l'esprit. Notre Galerie d'Art en Ligne vous ouvre les
+                portes d'une aventure artistique unique, mettant en lumière la diversité créative de talents émergents
+                et d'artistes renommés du monde entier.</p>
+
+        </div>
+    </div>
+
+    <div class="masonry-grid-container">
+        <div class="photo-gallery">
+            <div class="column">
+                <div class="photo">
+                    <img src="../assets/imgs/CLASSICISM/la_jeune_fille_ea_la_perle.jpg" alt="Photo 1">
+                    <div class="caption-masonry">
+                        <h4>La Jeune Fille à la perle </h4>
+                        <p>Johannes Vermeer</p>
+                        <p class="date-masonry">1665</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/FAUVISM/landscape-Near-Chatou.jpg" alt="Photo 2">
+                    <div class="caption-masonry">
+                        <h4>Landscape near Chatou</h4>
+                        <p>André Derain</p>
+                        <p class="date-masonry">1904</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/POINTILLISM/Camille_Pissarro_-_La_Récolte_des_Foins.jpg" alt="Photo 3">
+                    <div class="caption-masonry">
+                        <h4>La Récolte des Foins</h4>
+                        <p>Camille Pissarro</p>
+                        <p class="date-masonry">1887</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/IMPRESSIONISM/_jardin_impressionniste_.jpg" alt="Photo 4">
+                    <div class="caption-masonry">
+                        <h4>Dans le jardin des Mathurins</h4>
+                        <p>Andre Derain</p>
+                        <p class="date-masonry">1877</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/IMPRESSIONISM/4-femme-habille-en-blanc-(-g-pas-le-titre).jpg"
+                        alt="Photo 5">
+                    <div class="caption-masonry">
+                        <h4>Summer</h4>
+                        <p>Frank Weston Benson</p>
+                        <p class="date-masonry">1909</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/STREET-ART/Spiktri_2021_AvrilB-117.jpg" alt="Photo 6">
+                    <div class="caption-masonry">
+                        <h4>Street-Art</h4>
+                        <p>SpiKtri</p>
+                        <p class="date-masonry">2021</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="photo">
+                    <img src="../assets/imgs/STREET-ART/720xAUTO_original_article_2023_08_576f8826-d57e-4789-8d34-04df920b40e7.jpg"
+                        alt="Photo 7">
+                    <div class="caption-masonry">
+                        <h4>Street-Art</h4>
+                        <p>Banksy</p>
+                        <p class="date-masonry">2021</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/STREET-ART/La-création-de-héros-Julien-durix.jpg" alt="Photo 8">
+                    <div class="caption-masonry">
+                        <h4>The Creation of Heroes</h4>
+                        <p>Julien Durix</p>
+                        <p class="date-masonry">2022</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/IMPRESSIONISM/gustave-caillebotte-partie-de-bateau-dit-canotier-au-chapeau-haut-de-forme-musee-giverny.webp"
+                        alt="Photo 9">
+                    <div class="caption-masonry">
+                        <h4>La Partie de bateau</h4>
+                        <p>Gustave Caillebotte</p>
+                        <p class="date-masonry">1878</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/ROMANTISM/friedrich-lever-de-lune.jpg" alt="Photo 10">
+                    <div class="caption-masonry">
+                        <h4>Mondaufgang am Meer</h4>
+                        <p>Caspar David Friedrich</p>
+                        <p class="date-masonry">1822</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/FAUVISM/Dune_III,_by_Piet_Mondriaan.jpg" alt="Photo 11">
+                    <div class="caption-masonry">
+                        <h4>Dune III</h4>
+                        <p>Piet Mondriaan</p>
+                        <p class="date-masonry">1909</p>
+                    </div>
+                </div>
+
+                <div class="photo">
+                    <img src="../assets/imgs/CUBISM/Broc.jpg" alt="Photo 12">
+                    <div class="caption-masonry">
+                        <h4>Landscape near Chatou</h4>
+                        <p>Andre Derain</p>
+                        <p class="date-masonry">1904</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/REALISM/arton2028_1.jpg" alt="Photo 13">
+                    <div class="caption-masonry">
+                        <h4>Broc et Violon</h4>
+                        <p>Georges Braque</p>
+                        <p class="date-masonry">1910</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="photo">
+                    <img src="../assets/imgs/POINTILLISM/20458105299264973(pastitre).jpg" alt="Photo 14">
+                    <div class="caption-masonry">
+                        <h4>La Seine à la Grande Jatte - Printemps</h4>
+                        <p>Georges Seurat</p>
+                        <p class="date-masonry">1888</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/REALISM/boy_bubble.jpg" alt="Photo 15">
+                    <div class="caption-masonry">
+                        <h4>Les Bulles de savon</h4>
+                        <p>Édouard Manet</p>
+                        <p class="date-masonry">1867</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/CUBISM/AC-Le-Cubisme-FRE-LOiseau-bleu-1913.webp" alt="Photo 16">
+                    <div class="caption-masonry">
+                        <h4>The Blue Bird</h4>
+                        <p>Jean Metzinger</p>
+                        <p class="date-masonry">1913</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/FAUVISM/Georges-braque-l-estaque.jpg" alt="Photo 17">
+                    <div class="caption-masonry">
+                        <h4>Landscape near Chatou</h4>
+                        <p>Andre Derain</p>
+                        <p class="date-masonry">1904</p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="../assets/imgs/IMPRESSIONISM/le-bassin-de-nymphéas.jpg" alt="Photo 18">
+                    <div class="caption-masonry">
+                        <h4>L'Estaque</h4>
+                        <p>Georges Braque</p>
+                        <p class="date-masonry">19</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+            <section class="mb-4">
+                <!-- Icones réseaux sociaux -->
+                <h2 class="visually-hidden">Réseaux sociaux</h2>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" target="_blank"
+                    role="button"><i class="fab fa-twitter"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"
+                    role="button"><i class="fab fa-instagram"></i></a>
+                <!-- Youtube -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/" target="_blank"
+                    role="button"><i class="fab fa-youtube"></i></a>
+            </section>
+
+            <!-- newsletter formulaire -->
+            <section class="mb-4">
+                <h2 class="visually-hidden">Newsletter</h2>
+                <form action="index.html">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                S'inscrire à notre newsletter
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" placeholder="Adresse email">
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                S'inscrire
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Texte footer -->
+            <section class="mb-4 footer-caption">
+                <h2 class="visually-hidden">Caption footer</h2>
+                <p>
+                    Un refuge d'émotions, d'inspirations et d'authenticité. À travers chaque œuvre, nous célébrons la
+                    diversité,
+                    l'émerveillement et la profondeur artistique sous chaque angle. Notre galerie s'érige comme un lieu
+                    d'expression où les couleurs racontent des histoires, où les formes murmurent des vérités.
+                </p>
+            </section>
+            <!-- Liens -->
+            <section class="text-center">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <!-- Section : A propos -->
+                        <h5 class="text-uppercase">À propos</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="about-us.html" class="text-white">Qui sommes-nous ?</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-white">Contact</a>
+                            </li>
+                            <li>
+                                <a href="newsletter.html" class="text-white">Newsletter</a>
+                            </li>
+                            <li>
+                                <a href="mentions-legales.html" class="text-white">Mentions légales </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <!-- Section : Ressources -->
+                        <h5 class="text-uppercase">Ressources</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="exposition.html" class="text-white">Exposition du mois</a>
+                            </li>
+                            <li>
+                                <a href="menu.html" class="text-white">À Découvrir</a>
+                            </li>
+                            <li>
+                                <a href="galerie.html" class="text-white">Galerie d'art</a>
+                            </li>
+                            <li>
+                                <a href="menu.html" class="text-white">Analyse d'œuvre</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <!-- Section : Besoin d'aide ? -->
+                        <h5 class="text-uppercase">Besoin d'aide ?</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="faq.html" class="text-white">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="condition-utilisation.html" class="text-white">Conditions
+                                    d'utilisation</a>
+                            </li>
+                            <li>
+                                <a href="politique-confidentialite.html" class="text-white">Politique de
+                                    confidentialité</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Copyright -->
+            <p class="copyright"> ©2024 Myriad Art 360. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- Inclusion des fichier JS nécéssaire pour Bootstrap depuis un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

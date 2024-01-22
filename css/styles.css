@@ -1,0 +1,967 @@
+/* Importation de la font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Réinitialisation des styles */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* style du body */
+body {
+  background: #ffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+/* espace invisible */
+.space {
+  padding: 10px;
+}
+
+/* ligne séparatrice */
+.separator {
+  height: 0.5px;
+  width: 90%;
+  background-color: #000;
+  margin: 25px 0 25px 0;
+}
+/* ligne séparatrice bis */
+.separator-bis {
+  height: 0.5px;
+  width: auto;
+  background-color: #000;
+  margin: 70px 150px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #cacaca !important;
+}
+/* navbar */
+
+.nav-item a:hover {
+  text-decoration: none;
+  color: #707070 !important;
+}
+button[data-bs-slide-to="0"].active,
+button[data-bs-slide-to="1"].active,
+button[data-bs-slide-to="2"].active {
+  width: 550px;
+  background-color: rgba(255, 255, 255);
+}
+
+.navbar-nav .dropdown-item:active {
+  background-color: transparent !important;
+}
+
+.card a:hover {
+  text-decoration: none;
+  color: black !important;
+}
+#navbarDropdown a,
+#navbarSupportedContent a {
+  color: rgb(45, 45, 45);
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 65px;
+  margin-right: 35px;
+}
+
+/* carousel principal */
+
+.custom-border {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.rectangle-container {
+  margin-top: 30px;
+  margin-left: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
+}
+
+#hero-carousel img {
+  filter: none;
+}
+
+#hero-carousel .carousel-indicators {
+  justify-content: center;
+  width: 20%;
+}
+
+.rectangle-container .p-carousel {
+  font-size: 125% !important;
+}
+
+.rectangle-container .p-carousel-title {
+  font-size: 250% !important;
+}
+
+@media (max-width: 1200px) {
+  .rectangle-container .p-carousel {
+    font-size: 100% !important;
+  }
+
+  .rectangle-container .p-carousel-title {
+    font-size: 180% !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .rectangle-container .p-carousel {
+    font-size: 80% !important;
+  }
+
+  .rectangle-container .p-carousel-title {
+    font-size: 140% !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .rectangle-container .p-carousel {
+    font-size: 90% !important;
+  }
+
+  .rectangle-container .p-carousel-title {
+    font-size: 120% !important;
+  }
+
+  .btn-custom {
+    font-size: 70% !important;
+    text-align: center !important;
+    width: 90%;
+    padding: 5px 0 0 0 !important;
+    height: 30px;
+  }
+}
+
+.btn-custom {
+  background-color: #1e1e1f;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.btn-custom:hover {
+  background-color: #686868 !important;
+  color: #ffffff !important;
+}
+
+.btn-custom:active,
+.btn-custom:focus {
+  background-color: #a8a8a8 !important;
+  color: #ffffff !important;
+}
+
+#hero-carousel [data-bs-slide-to="0"],
+#hero-carousel [data-bs-slide-to="1"],
+#hero-carousel [data-bs-slide-to="2"] {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+}
+
+.custom-container {
+  margin-top: 20px;
+}
+
+.c-item {
+  height: 400px;
+}
+
+.c-item button {
+  height: 50px;
+  border-radius: 20;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.text-wrap {
+  white-space: normal;
+}
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.custom-img {
+  width: 300px;
+  height: auto;
+}
+
+/* style section "tendances" */
+.caption-small {
+  margin: 2em 2em 0 4em;
+  font-size: 110%;
+}
+
+.caption-big {
+  margin: 0 2em 0 2.2em;
+  font-size: 200%;
+}
+@media (max-width: 770px) {
+  .caption-small {
+    margin: 1em 0 0 0;
+    text-align: center;
+  }
+  .caption-big {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .caption-small {
+    font-size: 80%;
+  }
+
+  .caption-big {
+    font-size: 150%;
+  }
+}
+/* gestion des images du grid */
+.table-cell {
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.table-cell img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.caption-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.table-cell {
+  position: relative;
+  overflow: hidden;
+}
+
+/* légende de l'image */
+.caption-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  transform-origin: bottom center;
+}
+
+.table-cell img {
+  transition: transform 0.2s ease;
+}
+
+.table-cell:hover img {
+  transform: scale(1.11);
+}
+
+.table-cell:hover .caption-img {
+  opacity: 1;
+}
+
+/* taille des images de la section "tendances" */
+.img1 img {
+  height: 560px;
+  width: 100%;
+  object-fit: cover;
+}
+.img2 {
+  height: 300px;
+}
+.img3 img,
+.img4 img {
+  padding-top: 15px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Cartes "analyses d'oeuvres" */
+.card,
+.card-img-top {
+  border-radius: 0 !important;
+  border: none;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 225px !important;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.09);
+}
+
+.card-body-article {
+  height: 100%;
+  padding-top: 15px;
+  overflow: auto;
+}
+
+.card-title-article {
+  font-size: 100%;
+}
+
+.card-text-article {
+  font-size: 140%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Carousel Panorama d'oeuvres (artiste, titre et date) */
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel-inner .card {
+  transition: transform 0.3s ease;
+}
+
+.carousel-inner .card:hover {
+  transform: scale(1.08);
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+.recommended-img {
+  max-height: 250px !important;
+  object-fit: cover;
+}
+
+.recommended-img1 {
+  max-height: 200px !important;
+  object-fit: cover;
+}
+.recommended-img2 {
+  max-height: 225px !important;
+  object-fit: cover;
+}
+
+#recommendedCarousel .card {
+  margin-bottom: 50px;
+}
+#recommendedCarousel [data-bs-slide-to="0"] {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#recommendedCarousel [data-bs-slide-to="1"] {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#recommendedCarousel .carousel-control-prev-icon {
+  z-index: 1;
+  border-radius: 5px;
+  padding: 30px 0;
+  margin-right: 150px;
+}
+
+#recommendedCarousel .carousel-control-next-icon {
+  z-index: 1;
+  border-radius: 5px;
+  padding: 30px 0;
+  margin-left: 150px;
+}
+
+.card-body {
+  margin: 0;
+  padding: 10px 10px 0 0;
+}
+.card-title {
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card-text-title {
+  font-size: 1em;
+  color: #424242;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+.style {
+  color: #757575;
+}
+
+.card-text-date {
+  color: #7c7979;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 1.1em;
+  }
+
+  .card-text-title {
+    font-size: 0.8em;
+  }
+
+  .card-text-date {
+    font-size: 0.7em;
+  }
+}
+
+/* Masonry Grid */
+.masonry-grid-container {
+  max-width: 1295px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0 100px 0;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+@media (max-width: 768px) {
+  .photo-gallery {
+    flex-direction: column;
+  }
+}
+.photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+  filter: brightness(40%);
+}
+
+.photo:hover .caption-masonry {
+  opacity: 1;
+}
+
+.masonry-item {
+  position: relative;
+}
+
+.caption-masonry {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.caption-masonry h4 {
+  font-size: 120%;
+  color: #ffffff;
+}
+.caption-masonry p {
+  color: #ffffff;
+  font-size: 100%;
+}
+
+.caption-masonry .date-masonry {
+  font-size: 80%;
+}
+.caption-masonry .photo:hover .caption-masonry {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  background: #101010;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+footer li {
+  padding: 10px;
+}
+
+.footer-caption {
+  padding: 15px 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-caption {
+    padding: 15px 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-caption {
+    padding: 15px 150px;
+  }
+}
+.copyright {
+  font-size: 95%;
+  padding-top: 80px;
+}
+
+/* Page analyse : image grande en hauteur */
+.container-analyse {
+  padding: 50px 0 50px 50px !important;
+  margin: 0 !important;
+}
+
+.container-analyse img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0;
+  transition: transform 0.3s ease;
+}
+.container-analyse img:hover {
+  transform: scale(1.02);
+}
+.container-texte-analyse {
+  padding: 0 0 0 60px;
+}
+
+.container-texte-analyse .location a {
+  font-size: 90%;
+  color: #2b2b2b;
+  margin: 5px;
+}
+
+.container-texte-analyse .caption-analyse {
+  font-size: 150%;
+}
+
+.container-texte-analyse .caption-analyse-artiste {
+  font-size: 130%;
+}
+
+.container-texte-analyse .p-analyse {
+  font-size: 90%;
+  padding-top: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .container-analyse img {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-texte-analyse {
+    padding: 30px 8% 0 8%;
+  }
+
+  .container-analyse img {
+    height: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .container-texte-analyse {
+    padding: 30px 12% 0 4%;
+  }
+  .container-texte-analyse .caption-analyse {
+    font-size: 120%;
+  }
+  .container-texte-analyse .p-analyse {
+    font-size: 80%;
+  }
+}
+/* Page analyse : image grande en largeur */
+.container-analyse1 {
+  padding: 50px 50px 50px 50px !important;
+  margin: 0 !important;
+}
+
+.container-analyse1 img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 600px;
+  margin-bottom: 20px;
+  border: 0;
+  transition: transform 0.3s ease;
+}
+
+.container-analyse1 img:hover {
+  transform: scale(1.03);
+}
+
+.container-texte-analyse1 {
+  padding: 0 0 0 60px;
+}
+
+.container-texte-analyse1 .location1 a {
+  font-size: 90%;
+  color: #2b2b2b;
+  margin: 5px;
+}
+
+.container-texte-analyse1 .caption-analyse1 {
+  font-size: 150%;
+}
+
+.container-texte-analyse1 .caption-analyse-artiste1 {
+  font-size: 130%;
+}
+
+.container-texte-analyse1 .p-analyse1 {
+  font-size: 90%;
+  padding-top: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .container-analyse1 img {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-analyse1 {
+    padding: 30px 2% 0 2%;
+  }
+  .container-texte-analyse1 {
+    padding: 30px 4% 0 4%;
+  }
+
+  .container-analyse1 img {
+    height: auto;
+  }
+}
+
+@media (max-width: 580px) {
+  .container-texte-analyse1 {
+    padding: 30px 8% 0 8%;
+  }
+  .container-texte-analyse1 .caption-analyse1 {
+    font-size: 120%;
+  }
+  .container-texte-analyse1 .p-analyse1 {
+    font-size: 80%;
+  }
+}
+
+/* Effet parallax */
+
+/* page "A propos (About us)" */
+.parallax-container-1 {
+  min-height: 400px;
+  background-image: url("../assets/imgs/CUBISM/1200px-Juan_Gris,_1915,_Nature_morte_à_la_nappe_à_carreaux_(Still_Life_with_Checked_Tablecloth),_oil_on_canvas,_116.5_x_89.3_cm.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+/* page "Contact" */
+.parallax-container-2 {
+  min-height: 400px;
+  background-image: url("../assets/imgs/CUBISM/juan-gris-1399591.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* page "Newsletter" */
+.parallax-container-3 {
+  min-height: 400px;
+  background-image: url("../assets/imgs/CUBISM/Picasso-square.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* page "Politique de confidentialité" */
+.parallax-container-4 {
+  min-height: 400px;
+  background-image: url("../assets/imgs/CUBISM/casserole-pablo-picasso.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* page "Condition d'utilisation" */
+.parallax-container-5 {
+  min-height: 400px;
+  background-image: url("../assets/imgs/CUBISM/3ac335c229ef16424fa3a1048da3ebd41.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* page "Mentions légales" */
+.parallax-container-6 {
+  min-height: 400px;
+  background-image: url("../assets/imgs/CUBISM/Zapata-style-Landscape.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* page "FAQ" */
+.parallax-container-7 {
+  min-height: 400px;
+  background-image: url("../assets/imgs/POINTILLISM/Pointillisme-.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* page "A propos (About us)" */
+.container-presentation-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.container-presentation {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-text-presentation {
+  padding: 3% 20%;
+}
+
+.container-text-presentation .caption-presentation {
+  font-size: 220%;
+  padding: 0 5% 2% 5%;
+  text-align: center;
+}
+
+.container-text-presentation .caption-presentation-p,
+.container-text-presentation .caption-presentation-li {
+  font-size: 130%;
+  text-align: center;
+  padding: 0 5% 30px 5%;
+}
+
+/* page "menu" */
+.container-menu {
+  width: 100%;
+  max-width: 1295px;
+  margin: auto;
+  padding: 0;
+  display: block;
+}
+
+.full-height {
+  padding: 0 50px;
+}
+
+.menu-top-img img {
+  width: 100%;
+  height: 90vh;
+  object-position: bottom;
+  object-fit: cover;
+  padding: 0px 30px 50px 30px;
+  transition: transform 0.3s ease;
+  transform-origin: center bottom;
+}
+
+.menu-bottom-img img {
+  width: 100%;
+  height: 90vh;
+  object-position: bottom;
+  object-fit: cover;
+  padding: 70px 30px 0px 30px;
+  transition: transform 0.3s ease;
+  transform-origin: center bottom;
+}
+.full-height:hover .menu-top-img img:hover,
+.menu-bottom-img img:hover {
+  transform: scale(1.01);
+}
+
+.card-menu {
+  text-align: center;
+}
+
+.card-menu:hover {
+  transform: scale(1.09);
+}
+
+.card-menu:hover .card-img-top {
+  transform: scale(1.09);
+}
+
+.caption-description-menu {
+  font-size: 130%;
+  text-align: center;
+  padding: 0 5% 10% 5%;
+}
+
+.caption-small-menu {
+  margin: 2em 2em 0 3.8em;
+  font-size: 110%;
+}
+
+.caption-big-menu {
+  margin: 0 2em 0 2em;
+  font-size: 200%;
+}
+@media (max-width: 770px) {
+  .caption-small-menu {
+    margin: 1em 0 0 0;
+    text-align: center;
+  }
+  .caption-big-menu {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .caption-small-menu {
+    font-size: 80%;
+  }
+
+  .caption-big-menu {
+    font-size: 150%;
+  }
+}
+
+/* page "contact" */
+.container-description {
+  padding-top: 50px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-text-description {
+  padding: 3% 20% 0 20%;
+}
+
+.container-text-description .caption-description {
+  font-size: 220%;
+  padding: 0 5% 2% 5%;
+  text-align: center;
+}
+
+.container-text-description .caption-description-p,
+.container-text-description .caption-description-li {
+  font-size: 130%;
+  text-align: center;
+  padding: 0 5% 30px 5%;
+}
+
+.container-text-description .caption-description-p1 {
+  font-size: 130%;
+  text-align: center;
+  padding: 0 5% 0 5%;
+}
+
+.form-container input,
+.form-control {
+  background-color: rgb(250, 250, 250);
+}
+
+.form-container input:focus,
+.form-control:focus,
+input:hover,
+.form-control:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+/* style pour mail et lien vers "contact" */
+.send-mail {
+  color: #707070;
+}

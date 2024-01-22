@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Inclusion du fichier CSS de Bootstrap depuis un CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Inclusion de la bibliothèque Font Awesome de Bootstrap depuis un CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Importation du fichier CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Icône du site -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/LOGO/IconLogo.png">
+  <!-- Titre de la page -->
+  <title>Myriad Art 360 — Découvrir l'infini artistique à travers chaque perspective.</title>
+</head>
+
+<body>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <!-- Logo du site -->
+      <a class="navbar-brand" href="index.html"><img src="assets/imgs/LOGO/MyriadArtLogo.svg"
+          alt="Logo du site web"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Contenu de la barre de navigation -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contact.html">Contact</a>
+          </li>
+          <!-- Menu déroulant -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="pages/galerie.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Œuvres d'art
+            </a>
+            <!-- Sous-menu déroulant -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="pages/menu.html">À Découvrir</a></li>
+              <li><a class="dropdown-item" href="pages/galerie.html">Galerie d'Art</a></li>
+              <li>
+                <!-- Séparateur de menu -->
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="pages/exposition.html">Exposition du mois</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel haut de page -->
+  <div id="hero-carousel" class="carousel slide split-carousel custom-border" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Contenu des diapositives du carousel -->
+    <div class="carousel-inner">
+      <!-- Diapositive 1 -->
+      <div class="carousel-item active c-item">
+        <!-- Image N°1 -->
+        <img src="assets/imgs/IMPRESSIONISM/Le_panier_de_pommes,_par_Paul_Cézanne.jpg" class="d-block w-50 c-img"
+          alt="Slide 1">
+        <!-- Légende de la diapositive 1 -->
+        <div class="carousel-caption top-0 mt-4 text-end text-dark">
+          <div class="col-md-6 rectangle-container">
+            <p class="text-uppercase fs-5 mt-3 p-carousel">Découvrez l'art sous tous les angles </p>
+            <p class="display-5 fw-bolder text-capitalize p-carousel-title"> Une vision complète de la créativité
+            </p>
+            <a href="pages/menu.html"
+              class="btn btn-primary btn-custom px-4 py-2 fs-6 mt-3 button-discover">Découvrez</a>
+          </div>
+        </div>
+      </div>
+      <!-- Diapositive 2 -->
+      <div class="carousel-item c-item">
+        <!-- Image N°2 -->
+        <img src="assets/imgs/FAUVISM/landscape-Near-Chatou.jpg" class="d-block w-50 c-img" alt="Slide 2">
+        <!-- Légende de la diapositive 2 -->
+        <div class="carousel-caption top-0 mt-4 text-end text-md-end text-dark">
+          <div class="col-md-6 rectangle-container">
+            <p class="text-uppercase fs-5 mt-3 p-carousel">Chaque toile, une émotion</p>
+            <p class="display-5 fw-bolder text-capitalize p-carousel-title">La puissance de l'expression
+              artistique
+            </p>
+            <a href="pages/menu.html"
+              class="btn btn-primary btn-custom px-4 py-2 fs-6 mt-3 button-discover">Découvrez</a>
+          </div>
+        </div>
+      </div>
+      <!-- Diapositive 3 -->
+      <div class="carousel-item c-item">
+        <!-- Image de la diapositive 3 -->
+        <img src="assets/imgs/CUBISM/Motherhood-Angelina-and-the-Child-Diego-Rivera.jpg" class=" d-block w-50 c-img"
+          alt="Slide 3">
+        <!-- Légende de la diapositive 3 -->
+        <div class="carousel-caption top-0 mt-4 text-end text-md-end text-dark">
+          <div class="col-md-6 rectangle-container">
+            <p class="text-uppercase fs-5 mt-3 p-carousel">Créations intemporelles, valeurs universelles</p>
+            <p class="display-5 fw-bolder text-capitalize p-carousel-title">où le temps révèle des trésors
+              infinis
+            </p>
+            <a href="pages/menu.html"
+              class="btn btn-primary btn-custom px-4 py-2 fs-6 mt-3 button-discover">Découvrez</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Boutons de contrôle pour naviguer dans le carousel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Section : Exposition du mois -->
+  <div class="space"></div>
+  <p class="caption-small"> TENDANCES : EXPOSITION DU MOIS</p>
+  <p class="caption-big">VAN GOGH</p>
+  <div class="container custom-container">
+    <div class="row">
+      <!-- Colonne de gauche -->
+      <div class="col-md-6">
+        <!-- Image N°1 -->
+        <div class="table-cell img1">
+          <a href="pages/exposition.html"><img src="assets/imgs/IMPRESSIONISM/starry-night-1093721_1280.jpg"
+              alt="Image 1">
+            <div class="caption-img">EXPOSTION : La Nuit étoilée — Vincent Van Gogh</div>
+          </a>
+        </div>
+      </div>
+      <!-- Colonne de droite -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- Première image dans la colonne de droite -->
+          <div class="col-md-12">
+            <!-- Image N°2 -->
+            <div class="table-cell img2">
+              <a href="pages/exposition.html"> <img src="assets/imgs/VAN-GOGH-EXPOSITION/Le-cafe-de-nuit.jpg"
+                  alt="Image 2" class="img-fluid"> </a>
+              <div class="caption-img">Le Café de Nuit</div>
+            </div>
+          </div>
+          <!-- Deuxième image dans la colonne de droite -->
+          <div class="col-md-6">
+            <!-- Imge N°3 -->
+            <div class="table-cell img3">
+              <a href="pages/exposition.html"><img src="assets/imgs/VAN-GOGH-EXPOSITION/Terasse-du-cafe-le-soir.jpg"
+                  alt="Image 3"></a>
+              <div class="caption-img">Terrasse du café le soir</div>
+            </div>
+          </div>
+          <!-- Troisième image dans la colonne de droite -->
+          <div class="col-md-6">
+            <!-- Image N°4 -->
+            <div class="table-cell img4">
+              <a href="pages/exposition.html"><img src="assets/imgs/VAN-GOGH-EXPOSITION/autoportrait-van-gogh.webp"
+                  alt="Image 3"></a>
+              <div class="caption-img">Autoportrait
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section : Analyse d'oeuvres (cards cliquable) -->
+  <div class="space"></div>
+  <p class="caption-small"> ANALYSES: NOS ANALYSES D'OEUVRES DU MOIS</p>
+  <p class="caption-big"> À DÉCOUVRIR</p>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <!-- Première carte -->
+        <div class="card">
+          <a href="pages/analyses/la-femme-au-chapeau-henri-matisse.html">
+            <img src="assets/imgs/FAUVISM/La-femme-au-chapeau-henri-mathis.jpg" class="card-img-top" alt="Card 1">
+            <div class="card-body-article">
+              <h5 class="card-title-article">Henri Matisse</h5>
+              <p class="card-text-article">La femme au chapeau</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <!-- Deuxième carte -->
+        <div class="card">
+          <a href="pages/analyses/la-recolte-des-foins-camille-pissarro.html">
+            <img src="assets/imgs/POINTILLISM/Camille_Pissarro_-_La_Récolte_des_Foins.jpg" class="card-img-top"
+              alt="Card 2">
+            <div class="card-body-article">
+              <h5 class="card-title-article">Camille Pissarro</h5>
+              <p class="card-text-article">La récolte des foins</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <!-- Troisième carte -->
+        <div class="card">
+          <a href="pages/analyses/nighthawks-edward-hopper.html">
+            <img src="assets/imgs/REALISM/Hopper_Nighthawks.jpg" class="card-img-top" alt="Card 3">
+            <div class="card-body-article">
+              <h5 class="card-title-article">Edward Hopper</h5>
+              <p class="card-text-article">Nighthawks</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <!-- Quatrième carte -->
+        <div class="card">
+          <a href="pages/analyses/guernica-pablo-picasso.html">
+            <img src="assets/imgs/CUBISM/Guernica.jpg" class="card-img-top" alt="Card 4">
+            <div class="card-body-article">
+              <h5 class="card-title-article">Pablo Picasso</h5>
+              <p class="card-text-article">Guernica</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Espacement -->
+  <div class="space"></div>
+
+  <!-- Section : Panorama d'oeuvres (artiste, date et nom de l'oeuvre) -->
+  <p class="caption-small">PANORAMA ARTISTIQUE : LES ŒUVRES LES PLUS AIMÉS</p>
+  <p class="caption-big"> COLLECTION</p>
+  <!-- Container du carrousel Owl Carousel -->
+  <div class="container mt-5">
+    <div id="recommendedCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Boutons indicateurs du carrousel -->
+      <div class="carousel-indicators custom-indicators">
+        <button type="button" data-bs-target="#recommendedCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#recommendedCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <!-- Contenu du carrousel -->
+      <div class="carousel-inner">
+        <!-- Première diapositive du carrousel -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Six cartes d'œuvres d'art -->
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/CUBISM/Broc.jpg" class="recommended-img" alt="Card 1">
+                <div class="card-body">
+                  <h5 class="card-title">Georges Braque</h5>
+                  <p class="card-text-title">Broc et violon, 1910 - Cubisme</p>
+                  <p class="card-text-date">Kunstmuseum Basel </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/CUBISM/Paris-par-la-Marc-Chagall.jpg" class="recommended-img2" alt="Card 2">
+                <div class="card-body">
+                  <h5 class="card-title"> Marc Chagall</h5>
+                  <p class="card-text-title">Paris par la fenêtre, 1913 - Cubisme</p>
+                  <p class="card-text-date">Musée Solomon-R.-Guggenheim</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/FAUVISM/landscape-Near-Chatou.jpg" class="recommended-img1" alt="Card 3">
+                <div class="card-body">
+                  <h5 class="card-title">Andre Derain</h5>
+                  <p class="card-text-title">Landscape near Chatou, 1904 - Fauvisme</p>
+                  <p class="card-text-date">Collection privée</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/IMPRESSIONISM/le-bassin-de-nymphéas.jpg" class="recommended-img2" alt="Card 4">
+                <div class="card-body">
+                  <h5 class="card-title">Claude Monet</h5>
+                  <p class="card-text-title">Le Bassin aux nymphéas, 1889 - Impressionnisme</p>
+                  <p class="card-text-date">Musée d'Orsay</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/POINTILLISM/La-femme-à-l'ombrelle-Paul-Signac.jpg" class="recommended-img1"
+                  alt="Card 5">
+                <div class="card-body">
+                  <h5 class="card-title">Paul Signac</h5>
+                  <p class="card-text-title">Femme à l'ombrelle, 1893 - Pointillisme</p>
+                  <p class="card-text-date">Musée d'Orsay
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/CUBISM/Portrait-abstrait-Theo-van-Doesburg.jpg" class="recommended-img"
+                  alt="Card 6">
+                <div class="card-body">
+                  <h5 class="card-title">Theo van Doesburg</h5>
+                  <p class="card-text-title">Autoportrait, 1915 - Cubisme</p>
+                  <p class="card-text-date">Collection privée</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Deuxième diapositive du carrousel -->
+        <div class="carousel-item">
+          <!-- Six cartes d'œuvres d'art -->
+          <div class="row">
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/CLASSICISM//Poussin-Fuite_en_Egypte.jpg" class="recommended-img2" alt="Card 7">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Nicolas Poussin</h5>
+                  <p class="card-text-title">La Fuite en Égypte, 1658 - Classicisme</p>
+                  <p class="card-text-date">
+                    Musée des Beaux-Arts</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/STREET-ART/Fight-of-the-century-Julien-Durix.jpg" class="recommended-img1"
+                  alt="Card 8">
+                <div class="card-body">
+                  <h5 class="card-title">Julien-Durix</h5>
+                  <p class="card-text-title">Fight of the Century, 2021 - Street-Art</p>
+                  <p class="card-text-date">Collection privée</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/FAUVISM/Henri-Mathis-La-joie-de-vivre.jpg" class="recommended-img2" alt="Card 9">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Henri Matisse</h5>
+                  <p class="card-text-title">La Joie de vivre, 1906 - Fauvisme</p>
+                  <p class="card-text-date">
+                    Fondation Barnes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/FAUVISM/Turkish-cafe-Auguste-Macke.jpg" class="recommended-img" alt="Card 10">
+                <div class="card-body">
+                  <h5 class="card-title">August Macke</h5>
+                  <p class="card-text-title">Turkish Cafe, 1914 - Fauvisme</p>
+                  <p class="card-text-date">Kunstmuseum Bonn</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/POINTILLISM/Le-cirque-de-George-seurat.jpg" class="recommended-img2"
+                  alt="Card 11">
+                <div class="card-body">
+                  <h5 class="card-title">Georges Seurat</h5>
+                  <p class="card-text-title">Le Cirque, 1891 - Pointillisme</p>
+                  <p class="card-text-date">Musée d'Orsay</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <img src="assets/imgs/REALISM/boy_bubble.jpg" class="recommended-img1" alt="Card 12">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Édouard Manet</h5>
+                  <p class="card-text-title">Les Bulles de savon, 1867 - Realisme</p>
+                  <p class="card-text-date">
+                    Musée Calouste-Gulbenkian</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Boutons de contrôle pour naviguer dans le carrousel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recommendedCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="space"></div>
+  <!-- Section : Exploration Artistique (masonry grid) -->
+  <p class="caption-small">EXPLORATION ARTISTIQUE : UNE SÉLECTION D'ŒUVRES</p>
+  <p class="caption-big">DÉCOUVREZ L'ÉCLECTISME</p>
+  <!-- container masonry grid -->
+  <div class="masonry-grid-container">
+    <div class="photo-gallery">
+      <!-- Colonne N°1-->
+      <div class="column">
+        <div class="photo">
+          <img src="assets/imgs/CLASSICISM/la_jeune_fille_ea_la_perle.jpg" alt="Photo 1">
+          <div class="caption-masonry">
+            <h4>La Jeune Fille à la perle </h4>
+            <p>Johannes Vermeer</p>
+            <p class="date-masonry">1665</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/FAUVISM/landscape-Near-Chatou.jpg" alt="Photo 2">
+          <div class="caption-masonry">
+            <h4>Landscape near Chatou</h4>
+            <p>André Derain</p>
+            <p class="date-masonry">1904</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/POINTILLISM/Camille_Pissarro_-_La_Récolte_des_Foins.jpg" alt="Photo 3">
+          <div class="caption-masonry">
+            <h4>La Récolte des Foins</h4>
+            <p>Camille Pissarro</p>
+            <p class="date-masonry">1887</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/IMPRESSIONISM/_jardin_impressionniste_.jpg" alt="Photo 4">
+          <div class="caption-masonry">
+            <h4>Dans le jardin des Mathurins</h4>
+            <p>Andre Derain</p>
+            <p class="date-masonry">1877</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/IMPRESSIONISM/4-femme-habille-en-blanc-(-g-pas-le-titre).jpg" alt="Photo 5">
+          <div class="caption-masonry">
+            <h4>Summer</h4>
+            <p>Frank Weston Benson</p>
+            <p class="date-masonry">1909</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/STREET-ART/Spiktri_2021_AvrilB-117.jpg" alt="Photo 6">
+          <div class="caption-masonry">
+            <h4>Street-Art</h4>
+            <p>SpiKtri</p>
+            <p class="date-masonry">2021</p>
+          </div>
+        </div>
+      </div>
+      <!-- Colonne N°2-->
+      <div class="column">
+        <div class="photo">
+          <img src="assets/imgs/STREET-ART/720xAUTO_original_article_2023_08_576f8826-d57e-4789-8d34-04df920b40e7.jpg"
+            alt="Photo 7">
+          <div class="caption-masonry">
+            <h4>Street-Art</h4>
+            <p>Banksy</p>
+            <p class="date-masonry">2021</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/STREET-ART/La-création-de-héros-Julien-durix.jpg" alt="Photo 8">
+          <div class="caption-masonry">
+            <h4>The Creation of Heroes</h4>
+            <p>Julien Durix</p>
+            <p class="date-masonry">2022</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img
+            src="assets/imgs/IMPRESSIONISM/gustave-caillebotte-partie-de-bateau-dit-canotier-au-chapeau-haut-de-forme-musee-giverny.webp"
+            alt="Photo 9">
+          <div class="caption-masonry">
+            <h4>La Partie de bateau</h4>
+            <p>Gustave Caillebotte</p>
+            <p class="date-masonry">1878</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/ROMANTISM/friedrich-lever-de-lune.jpg" alt="Photo 10">
+          <div class="caption-masonry">
+            <h4>Mondaufgang am Meer</h4>
+            <p>Caspar David Friedrich</p>
+            <p class="date-masonry">1822</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/FAUVISM/Dune_III,_by_Piet_Mondriaan.jpg" alt="Photo 11">
+          <div class="caption-masonry">
+            <h4>Dune III</h4>
+            <p>Piet Mondriaan</p>
+            <p class="date-masonry">1909</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/CUBISM/Broc.jpg" alt="Photo 12">
+          <div class="caption-masonry">
+            <h4>Landscape near Chatou</h4>
+            <p>Andre Derain</p>
+            <p class="date-masonry">1904</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/REALISM/arton2028_1.jpg" alt="Photo 13">
+          <div class="caption-masonry">
+            <h4>Broc et Violon</h4>
+            <p>Georges Braque</p>
+            <p class="date-masonry">1910</p>
+          </div>
+        </div>
+      </div>
+      <!-- Colonne N°3-->
+      <div class="column">
+        <div class="photo">
+          <img src="assets/imgs/POINTILLISM/20458105299264973(pastitre).jpg" alt="Photo 14">
+          <div class="caption-masonry">
+            <h4>La Seine à la Grande Jatte - Printemps</h4>
+            <p>Georges Seurat</p>
+            <p class="date-masonry">1888</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/REALISM/boy_bubble.jpg" alt="Photo 15">
+          <div class="caption-masonry">
+            <h4>Les Bulles de savon</h4>
+            <p>Édouard Manet</p>
+            <p class="date-masonry">1867</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/CUBISM/AC-Le-Cubisme-FRE-LOiseau-bleu-1913.webp" alt="Photo 16">
+          <div class="caption-masonry">
+            <h4>The Blue Bird</h4>
+            <p>Jean Metzinger</p>
+            <p class="date-masonry">1913</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/FAUVISM/Georges-braque-l-estaque.jpg" alt="Photo 17">
+          <div class="caption-masonry">
+            <h4>Landscape near Chatou</h4>
+            <p>Andre Derain</p>
+            <p class="date-masonry">1904</p>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="assets/imgs/IMPRESSIONISM/le-bassin-de-nymphéas.jpg" alt="Photo 18">
+          <div class="caption-masonry">
+            <h4>L'Estaque</h4>
+            <p>Georges Braque</p>
+            <p class="date-masonry">19</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <section class="mb-4">
+        <!-- Icones réseaux sociaux -->
+        <h2 class="visually-hidden">Réseaux sociaux</h2>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" target="_blank" role="button"><i
+            class="fab fa-twitter"></i></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"
+          role="button"><i class="fab fa-instagram"></i></a>
+        <!-- Youtube -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/" target="_blank"
+          role="button"><i class="fab fa-youtube"></i></a>
+      </section>
+
+      <!-- newsletter formulaire -->
+      <section class="mb-4">
+        <h2 class="visually-hidden">Newsletter</h2>
+        <form action="index.html">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <p class="pt-2">
+                S'inscrire à notre newsletter
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" placeholder="Adresse email">
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light mb-4">
+                S'inscrire
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Texte footer -->
+      <section class="mb-4 footer-caption">
+        <h2 class="visually-hidden">Caption footer</h2>
+        <p>
+          Un refuge d'émotions, d'inspirations et d'authenticité. À travers chaque œuvre, nous célébrons la diversité,
+          l'émerveillement et la profondeur artistique sous chaque angle. Notre galerie s'érige comme un lieu
+          d'expression où les couleurs racontent des histoires, où les formes murmurent des vérités.
+        </p>
+      </section>
+      <!-- Liens -->
+      <section class="text-center">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <!-- Section : A propos -->
+            <h5 class="text-uppercase">À propos</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="pages/about-us.html" class="text-white">Qui sommes-nous ?</a>
+              </li>
+              <li>
+                <a href="pages/contact.html" class="text-white">Contact</a>
+              </li>
+              <li>
+                <a href="pages/newsletter.html" class="text-white">Newsletter</a>
+              </li>
+              <li>
+                <a href="pages/mentions-legales.html" class="text-white">Mentions légales </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <!-- Section : Ressources -->
+            <h5 class="text-uppercase">Ressources</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="pages/exposition.html" class="text-white">Exposition du mois</a>
+              </li>
+              <li>
+                <a href="pages/menu.html" class="text-white">À Découvrir</a>
+              </li>
+              <li>
+                <a href="pages/galerie.html" class="text-white">Galerie d'art</a>
+              </li>
+              <li>
+                <a href="pages/menu.html" class="text-white">Analyse d'œuvre</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <!-- Section : Besoin d'aide ? -->
+            <h5 class="text-uppercase">Besoin d'aide ?</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="pages/faq.html" class="text-white">FAQ</a>
+              </li>
+              <li>
+                <a href="pages/condition-utilisation.html" class="text-white">Conditions d'utilisation</a>
+              </li>
+              <li>
+                <a href="pages/politique-confidentialite.html" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <p class="copyright"> ©2024 Myriad Art 360. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!-- Inclusion des fichier JS nécéssaire pour Bootstrap depuis un CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
